@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: #fafafa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__by {
+  margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__posts {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.post {
+  width: 100%;
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__header {
+  background-color: white;
+  padding: 2%;
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.app__loginContainer {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .app__loginContainer {
+    padding: 5px;
+    flex-grow: 3;
+    margin-left: 10%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 768px) {
+  .app__loginContainer {
+    padding: 5px;
+    flex-grow: 3;
+    margin-left: 50%;
   }
+}
+
+@media (min-width: 992px) {
+  .app__loginContainer {
+    padding: 5px;
+    flex-grow: 3;
+    margin-left: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app__loginContainer {
+    padding: 5px;
+    flex-grow: 3;
+    margin-left: 70%;
+  }
+}
+
+.app__signUp {
+  flex-direction: column;
+  display: flex;
+}
+
+.app__signUp > center {
+  margin-bottom: 20px;
+}
+.app__signUp__Input {
+  width: 100%;
+}
+
+.app__signUp > div {
+  display: flex;
+}
+
+.app__signUp > div > div {
+  flex: 1;
 }
